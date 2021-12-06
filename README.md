@@ -10,7 +10,7 @@ It goes without saying that the onset of the COVID-19 virus has had a drastic im
 
 The motivation for this project came from a conversation I had with my roommate who is a nurse here in San Francisco who worked on a COVID unit during the pandemic. She told me that one of the biggest factors leading to inadequate care was the lack of hospital resources. Without proper resources, sick people were not able to receieve proper care. One of major contributing factors to this came from not knowing how long a patient would be hospitalized for when they are admitted. With such a huge influx of long-term residential patients, hospitals were quickly drained of resources such as PPE, certain medications, and even beds themselves. 
 
-### Business Understanding
+## Business Understanding
  
 **Stakeholder**: Analytics team for a group of hospitals looking to predict length of stay (LOS) estimates for COVID-19 inpatients. 
 
@@ -46,3 +46,13 @@ The motivation for this project came from a conversation I had with my roommate 
 My data came from a series of analytic healthcare data provided on Kaggle by Vidhya Healthcare Analytics to be used as a means of building and sharing predictive models for COVID-19 related projects.
 
 The data was collected anonymously in order to protect the identity of the individuals and hospitals.
+
+### Data Understanding
+
+### Modeling 
+
+### Evaluation
+
+### Future Research
+
+
