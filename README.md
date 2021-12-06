@@ -1,4 +1,4 @@
-# COVID-19_Capstone
+# COVID-19_Length_of_Stay_Predictor_Capstone
 
 ## The Motivation
 
