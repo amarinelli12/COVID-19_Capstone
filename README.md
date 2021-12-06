@@ -1,4 +1,4 @@
-# Capstone Project: COVID-19 Length of Stay (LOS) Predictor
+# Capstone Project: COVID-19 Hospital Stay Predictor
 
 ## Technical Summary
 
