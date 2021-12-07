@@ -157,3 +157,10 @@ The data lent itself to a nice analysis of Length of Stay in the context of the 
 **4. Hospital Information**
 * Does hospital funding play a significant role? 
 * What resources are available to begin with?
+
+├── [.ipnyb_checkpoints](https://github.com/drewbycakes/COVID-19_Capstone/tree/main/.ipynb_checkpoints)
+├── [images](https://github.com/drewbycakes/COVID-19_Capstone/tree/main/Images) 
+├── [.gitignore](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/.gitignore) 
+├── [COVID-19_Predictor_FINAL.ipynb](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/COVID-19_Predictor_FINAL.ipynb) 
+├── [data](https://github.com/drewbycakes/COVID-19_Capstone/tree/main/Data) 
+└── [README.md](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/README.md)
