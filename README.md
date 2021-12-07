@@ -1,6 +1,4 @@
-# Capstone Project: COVID-19 Hospital Stay Predictor
-
-![alt text](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/Images/COVID_Title.pngraw=true)
+![alt text](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/Images/COVID_Title.png?raw=true)
 
 ## Technical Summary
 
@@ -9,6 +7,8 @@ In this project, I create a predictive classification model geared towards a hos
 ## The Motivation
 
 It goes without saying that the onset of the COVID-19 virus has had a drastic impact on the world as we know it today. At the beginning of the pandemic, hospitals were overrun with patients needing medical attention and it became clear that hospital infrastructure was not equipped for this unprecedented event.
+
+![alt text](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/Images/Nurses_2.png?raw=true)
 
 The motivation for this project came from a conversation I had with my roommate who is a nurse here in San Francisco who worked on a COVID unit during the pandemic. She told me that one of the biggest factors leading to inadequate care was the lack of hospital resources. Without proper resources, sick people were not able to receieve proper care. One of major contributing factors to this came from not knowing how long a patient would be hospitalized for when they are admitted. With such a huge influx of long-term residential patients, hospitals were quickly drained of resources such as PPE, certain medications, and even beds themselves. 
 
@@ -67,7 +67,7 @@ My data came from a series of analytic healthcare data provided on Kaggle by Vid
 
 The data was collected anonymously in order to protect the identity of the individuals and hospitals.
 
-The dataset was originally comprised of 18 column features including my target 'Stay'. The features primarily consisted of coded geographical information and admission information. The features are described here: 
+The dataset was originally comprised of 18 column features including my target `Stay` as well as over 300,000 sample patient data points. The features primarily consisted of coded geographical information and admission information. The features are described here: 
 
 | Feature | Description | Notes |
 | --- | --- | --- |
@@ -91,12 +91,69 @@ The dataset was originally comprised of 18 column features including my target '
 
 Since I intended my model to be predictive, I removed features that were purely descriptive (i.e. `case_ID`, `patientid`) or were determined after the patient was released (i.e `Visitors with Patient`.) I also removed `Hospital_region_code` since `City_Code_Hospital` would provide more detailed geographic importance.  
 
-The data was split into categorical and numerical columns. I used a `LabelEncoder()` for the categorical variables and scaled the numerical values using `StandardScaler()`.
+The data was split into categorical and numerical columns. Data was checked for duplicates, missing values, and  I used a `LabelEncoder()` for the categorical variables and scaled the numerical values using `StandardScaler()` for modeling purposes. 
 
 ### Modeling 
 
-### Evaluation
+**Model 1**: Decision Tree Classifier
+* Cross-validated to predict the target class with `40.3% Accuracy`.
+
+**Model 2**: Random Forest Classifier
+* Cross-validated to predict the target class with `43.8% Accuracy`.
+
+**Model 3**: XGBoost Classifier 
+* Cross-validated to predict the target class with `54.2% Accuracy`. 
+
+**Final Model**: Tuned XGBoost Classifier 
+* Cross-validated to predict the target class with `54.6% Accuracy`.
+
+The feature importance for the final model is shown here: 
+
+![alt text](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/Images/Feature_Importance.png?raw=true)
+
+The features that most influenced the model were `Ward Type`, `Type of Type`, `Severity of Illness`, and `Bed Grade`. 
+
+### Evaluation & Conclusions
+
+In the context of my Business Problem, I am happy with a 54.6% Accuracy. My model is intended to help hospitals make informed data-driven decisions on how to best allocate their resources and personnel during time of high occupancy such as COVID-19. Being able to better separate "Short-Term", "Medium-Term", and "Long-Term" patients will allow hospitals to more effectivly care for their patients. 
+
+Based on the modeling and feature importance, the visuals below show how the model can be implemented in a hospital setting: 
+
+![alt text](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/Images/Key_Indicators.png?raw=true)
+
+Upon deployment, the following steps would be followed: 
+
+**1. Admission** 
+* Upon admission, patient profile would be used to predict "Short-Term", "Medium-Term", or "Long-term" stay based on key predictors. 
+
+**2. Placement**
+* Based on classification, the patient could then be placed in a section of the hospital dedicated to patients with a similar profile. 
+
+**3. Treatment & Discharge**
+* Resources and personnel can be allocated in an appopriate manner in order to best meet patient needs and expedite the discharge process.
+
+![alt text](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/Images/Model_Deployment.png?raw=true)
+
+With more patients placed in better hospital settings, they will be able to provide more appropriate healthcare services and expedite the discharge process. This will make room for additional patients who need treatment without overwhelming the current system.
 
 ### Future Research
 
+The data lent itself to a nice analysis of Length of Stay in the context of the problem I set out to work on. In addition to the data provided, I would be interested to see how other factors play a role in LOS predictions. In particular, I am interested in:
 
+![alt text](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/Images/Future_Research.png?raw=true)
+
+**1. Vaccinations**
+* Did the individual recieve a vaccination?
+* What type? 
+* How many doses? 
+
+**2. Variants** 
+* Does being infected with the Delta or Omicron variant affect a LOS prediction? 
+
+**3. Regionality**
+* Does being in an urban/rural area affect LOS prediction? 
+* Does community income level play a role? 
+
+**4. Hospital Information**
+* Does hospital funding play a significant role? 
+* What resources are available to begin with?
