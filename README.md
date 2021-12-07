@@ -34,6 +34,8 @@ The motivation for this project came from a conversation I had with my roommate 
 | 9 | 91-100 Days |
 | 10 | >100 Days |
 
+![alt text](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/Images/LOS_count.png?raw=true)
+
 We can see that the vast majority of patients are hospitalized for less than 60 days. In the context of my problem, I want to help hospitals allocate resources and personnel effectively. In doing so, it may not be necessary to have 10 different prediction labels and instead am going to separate into three types of stay: 
 
 | Label | Type of Stay | # of Days |
