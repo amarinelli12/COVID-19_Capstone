@@ -61,7 +61,7 @@ We can see that the vast majority of patients are hospitalized for less than 60 
     * Heavy use of personnel & resources 
     * Significant risk for long-term complications and/or death
 
-### Data Understanding
+## Data Understanding
 
 My data came from a series of analytic healthcare data provided on Kaggle by Vidhya Healthcare Analytics to be used as a means of building and sharing predictive models for COVID-19 related projects. The dataset can be found linked in my repository. 
 
@@ -93,7 +93,7 @@ Since I intended my model to be predictive, I removed features that were purely 
 
 The data was split into categorical and numerical columns. Data was checked for duplicates, missing values, and  I used a `LabelEncoder()` for the categorical variables and scaled the numerical values using `StandardScaler()` for modeling purposes. 
 
-### Modeling 
+## Modeling 
 
 **Model 1**: Decision Tree Classifier
 * Cross-validated to predict the target class with `40.3% Accuracy`.
@@ -113,7 +113,7 @@ The feature importance for the final model is shown here:
 
 The features that most influenced the model were `Ward Type`, `Type of Type`, `Severity of Illness`, and `Bed Grade`. 
 
-### Evaluation & Conclusions
+## Evaluation & Conclusions
 
 In the context of my Business Problem, I am happy with a 54.6% Accuracy. My model is intended to help hospitals make informed data-driven decisions on how to best allocate their resources and personnel during time of high occupancy such as COVID-19. Being able to better separate "Short-Term", "Medium-Term", and "Long-Term" patients will allow hospitals to more effectivly care for their patients. 
 
@@ -136,7 +136,7 @@ Upon deployment, the following steps would be followed:
 
 With more patients placed in better hospital settings, they will be able to provide more appropriate healthcare services and expedite the discharge process. This will make room for additional patients who need treatment without overwhelming the current system.
 
-### Future Research
+## Future Research
 
 The data lent itself to a nice analysis of Length of Stay in the context of the problem I set out to work on. In addition to the data provided, I would be interested to see how other factors play a role in LOS predictions. In particular, I am interested in:
 
