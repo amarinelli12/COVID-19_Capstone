@@ -1,5 +1,7 @@
 # Capstone Project: COVID-19 Hospital Stay Predictor
 
+![alt text](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/Images/COVID_Title.pngraw=true)
+
 ## Technical Summary
 
 In this project, I create a predictive classification model geared towards a hospital's analytics team seeking to make informed decisions for resources and personnel allocation based on predicted inpatient length of stay. The target variable is classified into three labels: `"Short-Term"`, `"Medium-Term"`, and `"Long-Term"` based on the number of days a patient is predicted to stay. The model uses fourteen features to predict the length of stay -- with features such as `Type of Admission`, `Severity of Illness`, `Bed Grade`, and `Ward Type` having the most influence. The final model produced is an tuned `XGBoost model` that is able to predict length of stay with `54% accuracy`. With further research and implementation, classifiers like these could be used in emergency situations to properly allocate resources based on predictive knowledge of how long a patient is expected to admitted for. 
