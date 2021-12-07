@@ -160,14 +160,14 @@ The data lent itself to a nice analysis of Length of Stay in the context of the 
 
 ## Project Directory
 
-├── [.ipnyb_checkpoints](https://github.com/drewbycakes/COVID-19_Capstone/tree/main/.ipynb_checkpoints)
+|── [.ipnyb_checkpoints](https://github.com/drewbycakes/COVID-19_Capstone/tree/main/.ipynb_checkpoints)
 <br>
-├── [images](https://github.com/drewbycakes/COVID-19_Capstone/tree/main/Images) 
+|── [images](https://github.com/drewbycakes/COVID-19_Capstone/tree/main/Images) 
 <br>
-├── [.gitignore](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/.gitignore) 
+|── [.gitignore](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/.gitignore) 
 <br>
-├── [COVID-19_Predictor_FINAL.ipynb](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/COVID-19_Predictor_FINAL.ipynb) 
+|── [COVID-19_Predictor_FINAL.ipynb](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/COVID-19_Predictor_FINAL.ipynb) 
 <br>
-├── [data](https://github.com/drewbycakes/COVID-19_Capstone/tree/main/Data) 
+|── [data](https://github.com/drewbycakes/COVID-19_Capstone/tree/main/Data) 
 <br>
 └── [README.md](https://github.com/drewbycakes/COVID-19_Capstone/blob/main/README.md)
